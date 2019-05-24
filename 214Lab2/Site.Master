@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.master.cs" Inherits="_214Lab2._default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav >      
+        <img class="jumbotron" src="inlandmarina_banner.jpg"  alt="InLand Marina Banner"  class="align-content-center"/> 
+        <div class="row align-content-center">
+            <div class="m-md-3"> <a href = "default.aspx"> Home </a></div>
+            <div class="m-md-3"><a href = "Docks.aspx">  Docks </a> </div>
+            <div class="m-md-3"><a href = "Registration.aspx">  Registration </a> </div>
+            <div class="m-md-3"><a href = "Contactus.aspx">  Contact Us </a></div>
+       </div>
+    </nav>
+    
+    <main>
+    <form id="form1" runat="server"> <asp:Menu ID="Menu2" runat="server"></asp:Menu>
+        <div class="align-content-center">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> <asp:Menu ID="Menu1" runat="server"></asp:Menu>
+            </asp:ContentPlaceHolder>
+        </div>   
+    </form>
+
+    </main>
+    <footer>
+        <div>
+            Copyright 2019 TechCareers&copy; All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
